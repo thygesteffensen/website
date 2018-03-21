@@ -12,30 +12,66 @@
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg  navbar-dark" style="background-color: #B10101;">
-	<a  class="navbar-brand" href="index.html">
-		<img src="fig/DTU_Logo.png" height="50" alt="couldn't find picture">
-	</a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	<span class="navbar-toggler-icon"></span>
-	</button>
-		<div class="collapse navbar-collapse" id="navbarNav">
-			<ul class="navbar-nav">
-			<li class="nav-item active">
-				<a class="nav-link" href="user.html">Brugeradministration<span class="sr-only">(current)</span></a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Log</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Recept oversigt</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link disabled" href="#">Disabled</a>
-			</li>
-		</ul>
-		</div>
+		<a  class="navbar-brand" href="index.html">
+			<img src="fig/DTU_Logo.png" height="50" alt="couldn't find picture">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="user.html">Brugeradministration<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Log</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Recept oversigt</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link disabled" href="#">Disabled</a>
+				</li>
+			</ul>
+			</div>
 	</nav>
 
+	<div class="container">
+		<div class="col-lg-10 offset-lg-1 col-sm-12">
+			<table class="table table-striped table-hover">
+				<tr>
+					<th>BrugerID</th>
+					<th>Bruger navn</th>
+					<th>Bruger rolle</th>
+					<th>Diverse</th>
+					<th>Diverse</th>
+				</tr>
+				<tr>
+					<td>1234</td>
+					<td>Anders And</td>
+					<td>Admin</td>
+					<td><button type="button" class="btn btn-warning">Opdatér</button></td>
+					<td><button type="button" class="btn btn-danger">Slet bruger</button></td>
+				</tr>
+				<tr>
+					<td>2345</td>
+					<td>Andersine</td>
+					<td>Laborant</td>
+					<td><button type="button" class="btn btn-warning">Opdatér</button></td>
+					<td><button type="button" class="btn btn-danger">Slet bruger</button></td>
+				</tr>
+				<tr>
+					<td>3456</td>
+					<td>Onkel Joachim</td>
+					<td>Millionær</td>
+					<td><button type="button" class="btn btn-warning">Opdatér</button></td>
+					<td><button type="button" class="btn btn-danger">Slet bruger</button></td>
+				</tr>
+			</table>
+			<button type="button" class="btn btn-success">Opret bruger</button>
+
+		</div>
+	</div>
 
 
 </body>
