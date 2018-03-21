@@ -12,48 +12,48 @@
     <title>Login | 16_del3</title>
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg  navbar-dark" style="background-color: #B10101;">
-	<a  class="navbar-brand" href="index.html">
-		<img src="fig/DTU_Logo.png" height="50" alt="couldn't find picture">
-	</a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	<span class="navbar-toggler-icon"></span>
-	</button>
-		<div class="collapse navbar-collapse" id="navbarNav">
-			<ul class="navbar-nav">
-			<li class="nav-item active">
-				<a class="nav-link" href="user.html">Brugeradministration<span class="sr-only">(current)</span></a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Log</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Recept oversigt</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link disabled" href="#">Disabled</a>
-			</li>
-		</ul>
-		</div>
+	<nav class="navbar fixed-top navbar-expand-lg  navbar-dark" style="background-color: #B10101;">
+		<a  class="navbar-brand" href="index.html">
+			<img src="fig/DTU_Logo.png" height="50" alt="couldn't find picture">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="user.html">Brugeradministration<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Log</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Recept oversigt</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link disabled" href="#">Disabled</a>
+				</li>
+			</ul>
+			</div>
 	</nav>
 
 
     <div class="container">
-		<div class="col-lg-4 offset-lg-4 col-sm-8 offset-sm-2">
+		<div class="col-lg-4 offset-lg-4 col-sm-6 offset-sm-3">
 			<div class="jumbotron">
-				<h1>Log in</h1>
+				<h1 class="center">Log in</h1>
 				<form action="user.html">
 					<p>BrugerID:
-					<input type="text" name="ID" method="post" size="4" value="1234">
+					<input type="text" name="id" method="get" size="4" value="1234">
 					</p>
 					<p>Kodeord:
-					<input type="text" name="PS" method="get" size="8" value="******">
+					<input type="password" name="psw" method="POST" size="8" value="1234">
 					</p>
 					<input type="submit">
 				</form>
 			</div>
 		</div>
 	</div>
-	
+
 </body>
 </html>
