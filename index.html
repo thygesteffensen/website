@@ -2,24 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="custome.css">
     <link rel="stylesheet" href="<bootstrap-4.0.0-dist/js/jquery-3.3.1.min.js"> <!-- This will be replaced with the online version-->
 	<link rel="stylesheet" href="bootstrap-4.0.0-dist/js/bootstrap.min.js"><!-- This will be replaced with the online version-->
 	<link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css"><!-- This will be replaced with the online version-->
 	<!-- Vores modificerede ændringer -->
-	<link rel="stylesheet" type="text/css" href="custome.css">
+	
 
-    <title>16_del3</title>
+    <title>Login | 16_del3</title>
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-	<a  class="navbar-brand" href="#">Login DTU</a>
+	<nav class="navbar navbar-expand-lg  navbar-dark" style="background-color: #B10101;">
+	<a  class="navbar-brand" href="index.html">
+		<img src="fig/DTU_Logo.png" height="50" alt="couldn't find picture">
+	</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	<span class="navbar-toggler-icon"></span>
 	</button>
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav">
 			<li class="nav-item active">
-				<a class="nav-link" href="#">Brugeradministration <span class="sr-only">(current)</span></a>
+				<a class="nav-link" href="user.html">Brugeradministration<span class="sr-only">(current)</span></a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="#">Log</a>
@@ -36,9 +39,21 @@
 
 
     <div class="container">
-		<div class="jumbotron">
-			Et eller andet andet
+		<div class="col-lg-4 offset-lg-4 col-sm-8 offset-sm-2">
+			<div class="jumbotron">
+				<h1>Log in</h1>
+				<form action="user.html">
+					<p>BrugerID:
+					<input type="text" name="ID" method="post" size="4" value="1234">
+					</p>
+					<p>Kodeord:
+					<input type="text" name="PS" method="get" size="8" value="******">
+					</p>
+					<input type="submit">
+				</form>
+			</div>
 		</div>
 	</div>
+	
 </body>
 </html>
