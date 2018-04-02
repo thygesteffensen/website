@@ -3,14 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="<bootstrap-4.0.0-dist/js/jquery-3.3.1.min.js"> <!-- This will be replaced with the online version-->
+   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="bootstrap-4.0.0-dist/js/bootstrap.min.js"><!-- This will be replaced with the online version-->
 	<link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css"><!-- This will be replaced with the online version-->
 	<!-- Vores modificerede ændringer -->
 	<link rel="stylesheet" type="text/css" href="custome.css">
 	
 	<title>Brugeradministartion</title>
+	<script>
+		$(document).ready(function(){
+		    $("#showbutton").click(function(){
+		        $("#show").hide(1000);
+		        $("#create").show(1000);
+		    });
+		});
+
+		$(document).ready(function(){
+		    $("#showuser").click(function(){
+		        $("#show").show(1000);
+		        $("#create").hide(1000);
+		    });
+		});
+
+		function onload(){
+			$("#create").hide();
+		}
+	</script>
 </head>
-<body>
+<body onload="onload()">
 	<nav class="navbar fixed-top navbar-expand-lg  navbar-dark" style="background-color: #B10101;">
 		<a  class="navbar-brand" href="index.html">
 			<img src="fig/DTU_Logo.png" height="50" alt="couldn't find picture">
@@ -24,7 +44,7 @@
 					<a class="nav-link" href="user.html">Brugeradministration<span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Log</a>
+					<a class="nav-link" href="log.html">Log</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#">Recept oversigt</a>
@@ -36,7 +56,7 @@
 			</div>
 	</nav>
 
-	<div class="container">
+	<div id="show"	class="container">
 		<div class="col-lg-10 offset-lg-1 col-sm-12">
 			<table class="table table-striped table-hover">
 				<tr>
@@ -68,8 +88,21 @@
 					<td><button type="button" class="btn btn-danger">Slet bruger</button></td>
 				</tr>
 			</table>
-			<button type="button" class="btn btn-success">Opret bruger</button>
+			<button id="showbutton" type="button" class="btn btn-success">Opret bruger</button>
+			
+		</div>
+	</div>
 
+	<div id="create"	class="container">
+		<div class="col-lg-10 offset-lg-1 col-sm-12">
+			<h3>Opret bruger</h3>
+			<form action="">
+				Bruger navn  <input type="text"> <br>
+				Kode ord  <input type="text"> 
+			</form> <br>
+			<button type="button" class="btn btn-success">Opret bruger</button>
+			<button type="button" class="btn btn-danger">Afbryd</button> <br><br>
+			<button id="showuser" type="button" class="btn btn-warning">Vis brugere</button>
 		</div>
 	</div>
 
