@@ -23,6 +23,6 @@ function onload(){
 
 function loginfunc(){
 	$("#navbar").show();
-	$("#login").hide(1000);
+	$("#login").hide(500);
 	$("#show").show(1000);
 }

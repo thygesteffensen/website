@@ -14,7 +14,7 @@
 </head>
 <body onload="onload()">
 <!-- Navbar -->
-	<nav id="navbar" class="navbar fixed-top navbar-expand-lg  navbar-dark" style="background-color: #B10101;">
+	<nav id="navbar" class="navbar fixed-top navbar-expand-lg  navbar-dark">
 		<a  class="navbar-brand" href="index.html">
 			<img src="fig/DTU_Logo.png" height="50" alt="couldn't find picture">
 		</a>
@@ -40,24 +40,27 @@
 	</nav>
 
 <!-- Login page -->
-    <div id="login" class="container">
-		<div class="col-lg-4 offset-lg-4 col-sm-6 offset-sm-3">
-			<div class="jumbotron">
-				<h1 class="center">Log in</h1>
-				
-				<form onsubmit="loginfunc()">
-					<p>BrugerID:
-					<input type="text" name="id" method="get" size="4" value="1234">
-					</p>
-					<p>Kodeord:
-					<input type="password" name="psw" method="POST" size="8" value="1234">
-					</p>
-					<input type="submit">
-				</form>
-				<button onclick="loginfunc()">press me</button>
+    <div id="login" class="container jumbotron red col-lg-2 offset-lg-5">
+		<h1>Log in</h1>
+		<form onsubmit="loginfunc()">
+			<div class="form-group">
+				<label for="exampleInputEmail1">userID</label>
+				<input type="userid" class="form-control" id="userid" placeholder="Enter userID">
+				</div>
+			<div class="form-group">
+				<label for="exampleInputPassword1">Password</label>
+				<input type="password" class="form-control" id="psswd" placeholder="Password">
+				</div>
+			<div class="form-check">
+				<input type="checkbox" class="form-check-input" id="exampleCheck1">
+				<label class="form-check-label" for="exampleCheck1">Check me out</label>
 			</div>
-		</div>
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+		<button onclick="loginfunc()" class="btn btn-primary">Gå videre</button>
 	</div>
+
+
 
 <!-- Log page -->
 
